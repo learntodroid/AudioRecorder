@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startRecording() {
         String uuid = UUID.randomUUID().toString();
-        fileName = getExternalCacheDir().getAbsolutePath() + "/" + uuid + ".3gp";
+        fileName = getFilesDir().getPath() + "/" + uuid + ".3gp";
         Log.i(MainActivity.class.getSimpleName(), fileName);
 
         recorder = new MediaRecorder();
